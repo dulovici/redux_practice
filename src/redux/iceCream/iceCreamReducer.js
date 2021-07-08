@@ -9,7 +9,7 @@ const iceCreamReducer = (state = initialState,{type,payload}) => {
     if(type === BUY_ICECREAM) {
         return {
             ...state,
-            numOfIceCreams: numOfIceCreams - 1
+            numOfIceCreams: state.numOfIceCreams - 1
         }
     }
 
