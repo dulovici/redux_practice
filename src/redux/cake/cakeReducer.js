@@ -11,7 +11,7 @@ const cakeReducer = (state = initialState,{type,payload}) => {
     if(type === BUY_CAKE) {
         return {
             ...state,
-            numOfCakes: state.numOfCakes - 1
+            numOfCakes: state.numOfCakes - payload
         }
     }
 
